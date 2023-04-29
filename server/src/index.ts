@@ -2,6 +2,7 @@ import koa from 'koa';
 import koaRouter from 'koa-router';
 import bodyParser from 'koa-bodyparser';
 import json from 'koa-json';
+import getSheetData from './getSheetData.js';
 
 const app = new koa();
 
@@ -12,6 +13,7 @@ const router = new koaRouter();
 
 router.get('/', async (ctx, next) => {
   ctx.body = { msg: 'Hello, world!' };
+  getSheetData();
 
   await next();
 });
