@@ -1,4 +1,7 @@
 {
   "name": "clock-puncher-server",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
